@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(107, 107, 107);
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 40px;
+}
+header .menu-toggle{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(74, 74, 74);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+header .menu-toggle i{
+   font-size: 1.5rem;
+   color: #fff;
+}
+.container{
+    width: 100%;
+    padding: 80px 0;
+}
+.container .reflex{
+ width: 60%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 1.5rem;
+ padding-bottom: 120px;
+}
+.container .reflex .reflex-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .reflex .reflex-img img{
+ width: 300px;
+ height: 300px;
+ border-radius: 50%;
+}
+.container .reflex .reflex-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.container .reflex .reflex-text h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.container .reflex .reflex-text p{
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: 400;
+}
+.container .reflex .reflex-text button{
+    width: 30%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 30px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.container .ipusm{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    padding: 130px 0 100px;
+    text-align: center;
+}
+.container .ipusm .ipusm-center{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.container .ipusm .ipusm-center h2.ipusm-header{
+   font-size: 2rem;
+   position: relative;
+}
+.container .ipusm .ipusm-center h2.ipusm-header::after{
+   position: absolute;
+   width: 70px;
+   content: '';
+   height: 0px;
+   border: 1px solid rgb(170, 170, 170);
+   top: -40px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.container .ipusm .ipusm-center p.ipusm-text{
+   width: 50%;
+   font-size: 1.3rem;
+}
+.ipusm-icons{
+    width: 100%;
+    padding: 20px 0;
+
+}
+.container .ipusm .ipusm-center ul.ipusm-icons-ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+
+}
+.container .ipusm .ipusm-center ul.ipusm-icons-ul li {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.container .ipusm .ipusm-center ul.ipusm-icons-ul li i{
+  font-size: 2.5rem;
+  
+}
+.container .ipusm .ipusm-center button{
+    width: 110px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 30px;
+    background-color: #fff;
+    cursor: pointer;
+}
+section.duis{
+    width: 70%;
+    margin: 0 auto;
+    padding: 150px 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+section.duis .duis-header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+section.duis .duis-header {
+
+    position: relative;
+}
+section.duis .duis-header p{
+    max-width: 400px;
+    font-size: 1.2rem;
+
+}
+section.duis .duis-header::after{
+    position: absolute;
+    width: 70px;
+    content: '';
+    height: 0px;
+    border-top: 2px solid rgb(170, 170, 170);
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+section.duis .duis-cards{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+ }
+section.duis .duis-cards .duis-card{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 40px 0;
+
+ }
+section.duis .duis-cards .duis-card:nth-child(2){
+ flex-direction: row-reverse;
+ }
+section.duis .duis-card-img{
+   max-width: 40%;
+ }
+
+section.duis .duis-cards img{
+    width: 100%;
+   border-radius: 10px;
+}
+section.duis .duis-card-content{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+}
+section.duis .duis-card-content::after{
+    position: absolute;
+    width: 70px;
+    content: '';
+    height: 0px;
+    border-top: 2px solid rgb(170, 170, 170);
+    top: -35px;
+    left: 0px;
+ }
+section.duis .duis-card-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+section.duis .duis-card-content a{
+    width: 110px;
+    height:40px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+}
+.duis-fotter{
+    margin-top: 10px;
+    text-align: center;
+    max-width: 85%;
+}
+.duis a{
+    width: 110px;
+    height:40px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px; 
+    margin-top: 40px;
+}
+section.amet{
+    padding: 120px 0;
+    width: 100%;
+    background-color: #333;
+   
+}
+.amet-center{
+    height: 100%;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+    position: relative;
+}
+.amet-center h2{
+    font-size: 2rem;
+    color: #fff;
+}
+.amet-center p{
+    color: #fff;
+}
+.amet-center a{
+    width: 110px;
+    height:40px;
+    text-decoration: none;
+    border: 1px solid #f7f7f7;
+    color: #f7f7f7;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+}
+.amet-center::after{
+    position: absolute;
+    width: 70px;
+    content: '';
+    height: 0px;
+    border-top: 2px solid #fff;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ section.manga{
+    padding-top: 120px;
+ }
+ section.manga .manga-center{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ section.manga .manga-center .manga-content{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+
+ }
+ section.manga .manga-center .manga-form{
+    width: 47%;
+    height: 100%;
+
+ }
+ section.manga .manga-center .manga-form form div{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 0 20px;
+ }
+ section.manga .manga-center .manga-form form input{
+    width: 47%;
+    display: block;
+    height: 40px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 0 10px;
+ }
+ section.manga .manga-center .manga-form form textarea{
+   width: 100%;
+   outline: none;
+   border: 1px solid #333;
+   border-radius: 5px;
+   padding: 0 10px;
+ }
+ section.manga .manga-center .manga-form form button{
+    width: 150px;
+    height:40px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px; 
+    margin-top: 20px;
+    background-color: transparent;
+ }
+ .manga-icons-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+ }
+ .manga-icons-list li{
+    margin-right:20px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ section.manga .manga-center .manga-content{
+    position: relative;
+ }
+ section.manga .manga-center .manga-content::after{
+    position: absolute;
+    width: 70px;
+    content: '';
+    height: 0px;
+    border-top: 2px solid rgb(107, 107, 107);
+    top: -35px;
+    left: 0%;
+ }
+ footer{
+    width: 100%;
+    text-align: center;
+    padding: 80px 0;
+    font-size: 14px;
+    color: #cccccc;
+    position: relative;
+ }
+ footer::after{
+    position: absolute;
+    width: 70px;
+    content: '';
+    height: 0px;
+    border-top: 2px solid rgb(107, 107, 107);
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
