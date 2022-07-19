@@ -1,0 +1,163 @@
+@media (max-width:600px) {
+  header{
+    padding: 0 20px;
+  }  
+  .container .reflex{
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 95%;
+  }
+  .container .reflex .reflex-text{
+    width: 100%;
+    text-align: center;
+  }
+  .container .reflex .reflex-text h1{
+    width: 100%;
+    text-align: center;
+  }
+  .container .reflex .reflex-text p{
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .container .reflex .reflex-text a {
+    width: 100%;
+}
+  .container .ipusm .ipusm-center {
+    width: 95%;
+}
+.container .ipusm .ipusm-center p.ipusm-text {
+    width: 100%;
+    font-size: 1.1rem;
+}
+.container .ipusm .ipusm-center ul.ipusm-icons-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.container .ipusm .ipusm-center ul.ipusm-icons-ul li::after {
+    display: none;
+}
+.container .ipusm .ipusm-center a {
+    width: 100%;
+}
+section.duis{
+  flex-wrap: wrap;
+  width: 95%;
+}
+.duis-cards{
+  flex-wrap: wrap;
+  width: 100%;
+}
+section.duis .duis-cards .duis-card {
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 4rem;
+  
+}
+section.duis .duis-card-img {
+  max-width: 90%;
+  order: -1;
+}
+section.duis .duis-card-img img{
+  max-width: 100%;
+  height: auto;
+}
+section.duis .duis-card-content {
+  width: 100%;
+  text-align: center;
+}
+section.duis .duis-card-content h3{
+  width: 100%;
+}
+section.duis .duis-card-content::after {
+  position: absolute;
+  width: 70px;
+  content: '';
+  height: 0px;
+  border-top: 2px solid rgb(170, 170, 170);
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section.duis .duis-card-content a {
+  width: 100%;
+}
+section.duis .duis-cards .duis-card:nth-child(2) {
+  flex-direction: column;
+}
+.duis-fotter {
+  width: 100%;
+  border-top: 3px solid #eee;
+  padding-top: 40px;
+}
+.duis a {
+  width: 100%;
+}
+.amet-center {
+  width: 95%;
+}
+.amet-center a {
+  width: 100%;
+  border-width: 2px;
+}
+section.manga .manga-center {
+  width: 95%;
+  flex-direction: column;
+}
+section.manga .manga-center .manga-content {
+ width: 100%;
+ text-align: center;
+}
+section.manga .manga-center .manga-content h2 {
+ width: 100%;
+ text-align: center;
+}
+section.manga .manga-center .manga-content::after {
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.manga-icons-list ,.manga-icons {
+margin: 0 auto
+
+}
+section.manga .manga-center .manga-form {
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    border-top: 2px solid #eee;
+    margin-top: 40px;
+}
+section.manga .manga-center .manga-form form div  {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+section.manga .manga-center .manga-form form div input {
+  width: 100%;
+  border-width: 2px;
+}
+section.manga .manga-center .manga-form form  textarea {
+  width: 100%;
+  border-width: 2px;
+}
+section.manga .manga-center .manga-form form button {
+  width: 100%;
+ 
+}
+section.manga {
+  padding: 120px 0 10px;
+  background-color: #f7f7f7;
+}
+footer {
+  padding-left: 20px;
+}
+footer {
+  padding-right: 20px;
+}
+}

@@ -30,7 +30,7 @@ header .menu-toggle i{
 }
 .container{
     width: 100%;
-    padding: 80px 0;
+    padding: 80px 0 0;
 }
 .container .reflex{
  width: 60%;
@@ -69,7 +69,7 @@ header .menu-toggle i{
     color: gray;
     font-weight: 400;
 }
-.container .reflex .reflex-text button{
+.container .reflex .reflex-text a{
     width: 30%;
     height: 40px;
     outline: none;
@@ -77,6 +77,10 @@ header .menu-toggle i{
     border-radius: 30px;
     background-color: #fff;
     cursor: pointer;
+    text-decoration: none;
+    font-size: .8rem;
+    line-height: 40px;
+    text-align: center;
 }
 .container .ipusm{
     width: 100%;
@@ -134,12 +138,26 @@ header .menu-toggle i{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  position: relative;
+}
+.container .ipusm .ipusm-center ul.ipusm-icons-ul li::after {
+position: absolute;
+width: 91%;
+height: 1px;
+background-color: #333;
+top: 50%;
+right: 0%;
+transform: translateX(100%);
+content: '';
+}
+.container .ipusm .ipusm-center ul.ipusm-icons-ul li:nth-last-child(1)::after {
+display: none;
 }
 .container .ipusm .ipusm-center ul.ipusm-icons-ul li i{
   font-size: 2.5rem;
   
 }
-.container .ipusm .ipusm-center button{
+.container .ipusm .ipusm-center a{
     width: 110px;
     height: 40px;
     outline: none;
@@ -147,6 +165,9 @@ header .menu-toggle i{
     border-radius: 30px;
     background-color: #fff;
     cursor: pointer;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
 }
 section.duis{
     width: 70%;
@@ -210,8 +231,9 @@ section.duis .duis-card-img{
  }
 
 section.duis .duis-cards img{
-    width: 100%;
-   border-radius: 10px;
+    width: 355px;
+    height: 300px;
+    border-radius: 10px;
 }
 section.duis .duis-card-content{
     height: 100%;
@@ -220,7 +242,7 @@ section.duis .duis-card-content{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
     position: relative;
 }
 section.duis .duis-card-content::after{
@@ -232,14 +254,14 @@ section.duis .duis-card-content::after{
     top: -35px;
     left: 0px;
  }
-section.duis .duis-card-content{
+/* section.duis .duis-card-content{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-}
+} */
 section.duis .duis-card-content a{
     width: 110px;
     height:40px;
@@ -249,6 +271,7 @@ section.duis .duis-card-content a{
     text-align: center;
     line-height: 35px;
     font-size: 14px;
+    margin: 0;
 }
 .duis-fotter{
     margin-top: 10px;
@@ -270,7 +293,19 @@ section.amet{
     padding: 120px 0;
     width: 100%;
     background-color: #333;
+    background-image: url(../images/brent-ninaber-zrOjcQXAdvk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
    
+}
+.amet .shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .amet-center{
     height: 100%;
@@ -313,7 +348,8 @@ section.amet{
     transform: translateX(-50%);
  }
  section.manga{
-    padding-top: 120px;
+    padding: 120px 0 90px;
+    background-color: #f7f7f7;
  }
  section.manga .manga-center{
     width: 70%;
@@ -346,18 +382,18 @@ section.amet{
  section.manga .manga-center .manga-form form input{
     width: 47%;
     display: block;
-    height: 40px;
+    height: 45px;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0 10px;
  }
  section.manga .manga-center .manga-form form textarea{
    width: 100%;
    outline: none;
-   border: 1px solid #333;
+   border: 1px solid #ccc;
    border-radius: 5px;
-   padding: 0 10px;
+   padding: 10px;
  }
  section.manga .manga-center .manga-form form button{
     width: 150px;
@@ -407,14 +443,17 @@ section.amet{
     font-size: 14px;
     color: #cccccc;
     position: relative;
+    background-color: #f7f7f7;
+
  }
  footer::after{
     position: absolute;
     width: 70px;
     content: '';
     height: 0px;
-    border-top: 2px solid rgb(107, 107, 107);
-    top: 10px;
+    border-top: 2px solid #cccccc;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    
  }
