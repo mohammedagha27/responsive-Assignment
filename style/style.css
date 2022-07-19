@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Cairo&family=Open+Sans:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(107, 107, 107);
 }
 header{
